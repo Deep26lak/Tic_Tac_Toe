@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9e4770;
+  text-align: center;
+  font-family: cursive;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.box {
+  font-family: Rubik Bubbles;
+
+  height: 18vmin;
+  width: 18vmin;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  font-size: 5vmin;
+  font-weight: 800;
+  color: #201a23;
+  background-color: bisque;
+}
+
+.reset {
+  padding: 1rem;
+  font-size: 3vmin;
+  font-weight: 700;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: #631d76;
+  color: white;
+}
+
+.new-btn {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  font-size: 3vmin;
+  font-weight: 700;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: #631d76;
+  color: white;
+}
+
+.msg-container {
+  text-align: center;
+}
+.msg {
+  color: white;
+  font-size: 3rem;
+}
+
+.hide {
+  display: none;
+}
+.mainHide {
+  display: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  h1,
+  h3 {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+
+  .box {
+    width: 17vmin;
+    font-size: 5vmin;
+  }
+
+  .reset,
+  .new-btn {
+    font-size: 4vmin;
+  }
+
+  .msg {
+    font-size: 2rem;
+  }
+}
